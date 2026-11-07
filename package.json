@@ -1,0 +1,21 @@
+{
+  "name": "api-daftar-produk",
+  "version": "1.0.0",
+  "description": "Tugas Week 10 Pemrograman Web - REST API daftar produk dengan ExpressJS dan Prisma",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "seed": "node prisma/seed.js",
+    "studio": "prisma studio"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.3.0",
+    "@prisma/client": "6.19.3"
+  },
+  "devDependencies": {
+    "prisma": "6.19.3"
+  }
+}
