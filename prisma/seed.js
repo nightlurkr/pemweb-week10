@@ -4,12 +4,12 @@ const products = require("../data/products");
 const prisma = new PrismaClient();
 
 async function main() {
-  await prisma.product.deleteMany();
+  await prisma.$executeRawUnsafe('TRUNCATE TABLE "Product" RESTART IDENTITY CASCADE');
 
   const data = products.map(({ name, price }) => ({ name, price }));
   const hasil = await prisma.product.createMany({ data });
 
-  console.log(`Seed selesai, ${hasil.count} produk dimasukkan`);
+  console.log(`Seed selesai, ${hasil.count} produk dimasukkan, id mulai dari 1`);
 }
 
 main()

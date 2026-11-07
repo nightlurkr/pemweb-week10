@@ -8,6 +8,8 @@ disimpan di database.
 
 Ryan Adya Purwanto - 5027231046
 
+Repository: https://github.com/nightlurkr/pemweb-week10
+
 ## Prasyarat
 
 - Node.js versi 18 atau lebih baru
